@@ -101,7 +101,12 @@ function ProjectList() {
               <img src={item.thumbnailUrl} alt="Abundance and Health" />
             </div>
             <div className="links">
-              <a href={item.url} className="live_url" target="_blank">
+              <a
+                href={item.url}
+                className="live_url"
+                rel="noreferrer"
+                target="_blank"
+              >
                 Live Site
               </a>
             </div>
