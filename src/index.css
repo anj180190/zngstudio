@@ -1,13 +1,210 @@
+html,
+body {
+  min-width: 320px;
+  min-height: 100%;
+}
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: "Chivo";
+  src: url("fonts/Chivo-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "questa";
+  src: url("fonts/2-Questa_Regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "questa slab 25";
+  src: url("fonts/2_questa_slab_regular_25.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "questa sans";
+  src: url("fonts/2-Questa_Sans_Regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "questa grande 31";
+  src: url("fonts/2-questa_grande_regular_31.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "questa";
+  src: url("fonts/2-Questa_Regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "questa slab 25";
+  src: url("fonts/2_questa_slab_regular_25.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "questa sans";
+  src: url("fonts/2-Questa_Sans_Regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "questa grande 31";
+  src: url("fonts/2-questa_grande_regular_31.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  width: 100%;
+  height: 100%;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1.5em;
+  color: #333;
+  font-family: Chivo, sans-serif;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+h1,
+h3 {
+  font-family: questa, sans-serif;
+}
+a,
+p {
+  font-family: Chivo, sans-serif;
+}
+a {
+  color: #333;
+}
+
+a:hover {
+  color: #5b017b;
+}
+h1,
+h6 {
+  margin-top: 16px;
+  color: #3b3b3b;
+}
+h2,
+h3 {
+  margin-top: 24px;
+  font-size: 40px;
+  line-height: 1.25;
+  font-family: Chivo, sans-serif;
+  font-weight: 700;
+  color: #3b3b3b;
 }

@@ -1,38 +1,383 @@
 .App {
+  display: grid;
+  grid-template-columns: 420px 3fr;
+}
+
+.brand {
+  display: flex;
+  height: 75px;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  color: #333333;
+}
+.brand {
+  text-decoration: none;
+}
+.logo-text {
+  font-family: questa, sans-serif;
+  font-size: 42px;
+  font-weight: 400;
+  color: #5b017b;
+  text-transform: none;
+}
+
+.Sidebar {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-justify-content: space-between;
+  justify-content: space-between;
+  -ms-align-items: flex-start;
+  align-items: flex-start;
+  padding: 15vh 60px 20px 60px;
+  color: #333333;
+  position: fixed;
+  width: 420px;
+
+  height: 100vh;
+  background-color: #fecc00;
+}
+
+/* .Sidebar .menu {
+  position: fixed;
+  top: 50%;
+  width: 8em;
+  margin-top: -2.5em;
+} */
+.Sidebar .menu ul {
+  margin: 0px;
+  padding: 0px;
+}
+.Sidebar .menu ul li {
+  list-style: none;
+  display: block;
+  padding: 10px;
+}
+.Sidebar .menu ul li:hover,
+.Sidebar .menu ul li.active {
+  border-left: 5px solid #5b017b;
+}
+.Sidebar .menu li:hover a {
+  color: #333333;
+}
+.Sidebar .menu li a {
+  font-size: 1.3rem;
+  margin-left: 0px;
+  color: #333333;
+  text-decoration: none;
+}
+
+.Main {
+  grid-column-start: 2;
+}
+
+.projectList {
+  grid-area: projectList;
+  background-color: #404041;
+  color: #fff;
+}
+.projectList {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.projectList {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.projectList .project {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-justify-content: center;
+  justify-content: center;
+  -ms-align-items: flex-start;
+  align-items: flex-start;
+  position: relative;
+  padding: 30px;
+  min-height: 300px;
+  overflow: hidden;
+}
+
+.projectList .project {
+  padding: 20px 30px;
+  min-height: 50px;
+}
+
+.project:hover::before {
+  top: 0;
+  left: 0;
+  transition-delay: 0;
+}
+.project::before {
+  position: absolute;
+  content: "";
+  left: 100%;
+  top: 100%;
+  width: 100%;
+  height: 100%;
+  background-color: #5b017b;
+  opacity: 1;
+  z-index: 1;
+  transition-duration: 0.5s;
+  transition-timing-function: cubic-bezier(0.7, 0, 0.2, 1);
+  transition-delay: 0.25s;
+}
+
+.projectImage {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.projectImage img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-style: none;
+}
+.project > :not(.projectImage) {
+  position: relative;
+  z-index: 1;
+  opacity: 0;
+  transition-duration: 0.6s;
+  transition-timing-function: cubic-bezier(0.7, 0, 0.2, 1);
+  transition-delay: 0;
+}
+.project:hover > :not(.projectImage) {
+  opacity: 1;
+  transform: translate(0, 0);
+  transition-delay: 0.5s;
+}
+.projectList .project .tags {
+  font-size: 12px;
+  line-height: 18px;
+  text-transform: uppercase;
+  margin-top: 20px;
+  font-weight: 500;
+  font-style: normal;
+  color: #fecc00;
+}
+.projectList .project .live_url {
+  color: #fff;
+  text-decoration: none;
+  border: 1px solid #fff;
+  border-radius: 2px;
+  padding: 3px 8px 3px 8px;
+}
+.projectList .project .live_url:hover {
+  border-bottom: 1px solid#fff;
+}
+
+.projectList .project .links {
+  text-align: right;
+  width: 100%;
+}
+
+.projectList .project p {
+  font-size: 16px;
+  color: #fff;
+}
+
+.Content {
+  padding: 4rem 3rem;
+  min-height: 100vh;
+}
+.Content .page-title {
+  margin-bottom: 32px;
+  font-size: 60px;
+  line-height: 76px;
+  font-weight: 400;
+  color: #3b3b3b;
+}
+.Content .page-title:before {
+  content: "";
+  width: 290px;
+  height: 15px;
+  background-image: url("");
+  background-position: center center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  bottom: -15px;
+  right: 15px;
+  display: none;
+}
+
+.card-quote,
+.my-button,
+.nav-link,
+a,
+strong {
+  font-weight: 400;
+}
+p {
+  margin-bottom: 32px;
+  color: #333333;
+  font-size: 20px;
+  line-height: 1.4;
+  font-weight: 300;
+}
+.projectList .project h3 {
+  font-size: 24px;
+  color: #fecc00;
+}
+div#about h1,
+div#about h3,
+div#about p {
+  color: #fff;
+}
+div#about h3 {
+  font-size: 32px;
+  color: #fecc00;
+}
+
+div#about {
+  background-color: #5b017b;
+}
+
+div#home {
+}
+div#contact {
+  background-color: #1b1b1b;
+}
+
+#rcorners2 {
+  border-radius: 15px 50px 30px;
+  background: #5b017b;
+  padding: 20px;
+  width: 300px;
+  color: #fff;
+}
+.welcome-section {
+  grid-template-columns: 1fr 1fr;
+  display: grid;
+  margin-bottom: 60px;
+}
+
+.homebannerContent {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+#progressBarContainer {
+  position: fixed;
+  z-index: 10;
+  background: rgba(255, 255, 255, 0.05);
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+#progressBar {
+  background-color: #5b017b;
+  transform-origin: top left;
+  transform: scale(0, 0);
+  opacity: 0;
+}
+
+#progressBarContainer,
+#progressBar {
+  height: 10px;
+}
+.homebottom {
+  text-align: center;
+  padding-top: 60px;
+}
+#contact p {
+  color: #fecc00;
+}
+div#contact h1 {
+  color: #fff;
+}
+div#contact a {
+  color: #fecc00;
+}
+div#contact a:hover {
+  color: #5b017b;
+}
+div#contact img {
+  width: 100%;
+}
+
+div#services {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+div#services .servicesbox {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-wrap: wrap;
 }
 
-.App-link {
-  color: #61dafb;
+div#services .servicesBoxItem {
+  flex: 1 1 30%; /* explanation below */
+  margin: 5px;
+  padding: 20px;
+  text-align: left;
+  position: relative;
+  transition: 0.5s;
+  z-index: 1;
+  border-radius: 5px;
+  background-color: #fecc00;
+}
+div#services .servicesBoxItem::before {
+  position: absolute;
+  content: "";
+  left: 100%;
+  top: 100%;
+  width: 100%;
+  height: 0px;
+  border-radius: 5px;
+  background-color: #5b017b;
+  transition-duration: 0.5s;
+  transition-timing-function: cubic-bezier(0.7, 0, 0.2, 1);
+  transition-delay: 0.25s;
+  z-index: -1;
+  color: #fff;
+}
+div#services .servicesBoxItem:hover::before {
+  top: 0;
+  left: 0;
+  height: 100%;
+  transition-delay: 0;
+}
+div#services .servicesBoxItem:hover p {
+  color: #fff;
+  transition-duration: 0.5s;
+  transition-timing-function: cubic-bezier(0.7, 0, 0.2, 1);
+  transition-delay: 0.25s;
+}
+div#services .servicesBoxItem:hover h3 {
+  color: #fecc00;
+  transition-duration: 0.5s;
+  transition-timing-function: cubic-bezier(0.7, 0, 0.2, 1);
+  transition-delay: 0.25s;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+div#services .servicesBoxItem p {
+  font-size: 16px;
+}
+div#services .servicesBoxItem h3 {
+  font-size: 24px;
+}
+.servicesBoxItem img {
+  width: 80px;
+}
+.contact img {
+  width: 30px;
+  margin-right: 10px;
+}
+.contactinfo {
+  margin-top: 60px;
+}
+div#contact .contactinformation > p > img {
+  width: 50px;
+  margin-right: 20px;
 }
