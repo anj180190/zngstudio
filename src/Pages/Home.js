@@ -1,7 +1,6 @@
 import React from "react";
 import homepageImage from "../homagepagebannerremovebg.png";
 import alllangs from "../icons/alllangicon.png";
-import homebottomimage from "../homebottom.png";
 function Home() {
   return (
     <div className="Content" id="home">
