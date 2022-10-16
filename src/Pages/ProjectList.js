@@ -3,6 +3,9 @@ import masala from "../image/masala.png";
 import cells from "../image/cells.jpeg";
 import danceClass from "../image/dance-class.jpg";
 import plugin from "../image/plugin.png";
+import vision from "../image/Vision-Recruitment.png";
+import Pinkadmedia from "../image/media.jpg";
+import hrhint from "../image/hrhint.jpg"
 
 const Projects = [
   {
@@ -45,28 +48,28 @@ const Projects = [
     id: 5,
     title: "Hrhintonline",
     url: "https://www.hrhintonline.lt/",
-    thumbnailUrl: "https://placeimg.com/640/480/nature",
+    thumbnailUrl: hrhint,
     description:
       "Wordpress website that include the customer login/registration and having plans as well. ",
     tags: "Website Development | design | wordpress",
   },
   {
     id: 6,
-    title: "Accusamus ea aliquid et amet sequi nemo",
-    url: "https://via.placeholder.com/600/56a8c2",
-    thumbnailUrl: "https://placeimg.com/640/480/people",
+    title: "A Job Portal",
+    url: "https://www.vision-recruitment.de/",
+    thumbnailUrl: vision,
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type.",
-    tags: "Website Development & design",
+      "A website that server recruitmentfor IT jobs.",
+    tags: "Website Development & design|Wordpress|plugin",
   },
   {
     id: 7,
-    title: "Officia delectus consequatur vero aut veniam explicabo molestias",
-    url: "https://via.placeholder.com/600/b0f7cc",
-    thumbnailUrl: "https://placeimg.com/640/480/sepia",
+    title: "Advertising solutions",
+    url: "http://pinkadmedia.com/",
+    thumbnailUrl: Pinkadmedia,
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type.",
-    tags: "Website Development & design",
+      "A website that offer multi-channel advertising solutions for display, desktop, video and mobile.",
+    tags: "Website Development & design|Wordpress|plugin",
   },
   {
     id: 8,
